@@ -10,10 +10,10 @@
     <h1>Hi! I'm the pug-o-clock!</h1>
     <img src="https://raw.githubusercontent.com/darkestblue91/service-worker/master/pug-o-clock.jpg" alt="Pug">
     <h1>The time is <span id="timer"></span></h1>
-    <script src="/timer.js"></script>
+    <script src="https://raw.githubusercontent.com/darkestblue91/service-worker/master/timer.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js', { scope: '/' })
+            navigator.serviceWorker.register('https://raw.githubusercontent.com/darkestblue91/service-worker/master/sw.js', { scope: '/' })
                 .then(function(registration) {
                     console.log('Service Worker Registered');
                 });
