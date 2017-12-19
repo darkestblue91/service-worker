@@ -5,7 +5,7 @@ self.addEventListener('install', e => {
 		caches.open('service-worker').then(cache => {
 			return cache.addAll([
 				'/',
-				'/pug.jpg',
+				'/pug-o-clock.jpg',
 				'/timer.js'
 			])
 			.then(() => self.skipWaiting());
